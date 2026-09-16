@@ -165,29 +165,6 @@ Published at **IEEE ICET 2024**.
 </p>
 ---
 
-## 🏆 GitHub Achievements
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=memoonch&theme=tokyonight&no-frame=true&no-bg=true&margin-w=10" />
-</p>
-
----
-
-## 📦 Repository Overview
-
-<p align="center">
-  <img src="https://github-contributor-stats.vercel.app/api?username=memoonch&limit=5&theme=tokyonight&combine_all_yearly_contributions=true" />
-</p>
-
----
-
-## 💻 Coding Activity
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=memoonch&show_icons=true&include_all_commits=true&count_private=true&hide_title=true&hide_border=true&theme=tokyonight" />
-</p>
-
----
 
 ## 🚀 Featured Projects
 
