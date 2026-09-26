@@ -1,150 +1,392 @@
-<h1 align="center">Muhammad Memoon</h1>
+<!-- ========================= HEADER ========================= -->
 
 <p align="center">
-  <strong>Unity Game Developer · Software Engineer · AI/ML Research</strong>
+  <img
+    src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,50:0A66C2,100:2BD9FF&height=220&section=header&text=Muhammad%20Memoon&fontSize=48&fontColor=FFFFFF&animation=fadeIn&fontAlignY=35&desc=Unity%20Game%20Developer%20%E2%80%A2%20Software%20Engineer%20%E2%80%A2%20AI%2FML%20Enthusiast&descAlignY=56&descSize=18"
+    width="100%"
+  />
 </p>
 
 <p align="center">
-  Building interactive games, gameplay systems, and practical software with Unity, C#, and Python.
+  <a href="https://memoonch.github.io/memoon/">
+    <img src="https://img.shields.io/badge/🌐_Portfolio-2BD9FF?style=for-the-badge&logoColor=black" />
+  </a>
+  <a href="https://www.linkedin.com/in/muhammad-memoon-459279268/">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
+  <a href="mailto:memoonch@gmail.com">
+    <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
+  </a>
+  <a href="https://github.com/memoonch?tab=repositories">
+    <img src="https://img.shields.io/badge/Projects-181717?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
 </p>
 
 <p align="center">
-  <a href="https://memoonch.github.io/memoon/">Portfolio</a>
-  •
-  <a href="https://www.linkedin.com/in/muhammad-memoon-459279268/">LinkedIn</a>
-  •
-  <a href="mailto:memoonch@gmail.com">Email</a>
+  <img src="https://komarev.com/ghpvc/?username=memoonch&label=Profile%20Views&color=2BD9FF&style=flat-square" />
+  <img src="https://img.shields.io/github/followers/memoonch?label=Followers&style=flat-square&logo=github" />
 </p>
 
----
+<br/>
 
-## About Me
+<!-- ========================= ABOUT ========================= -->
 
-I'm a **Unity Game Developer and Software Engineer** focused on building responsive, polished, and maintainable game experiences.
+## 👨‍💻 About Me
 
-My primary work is in **Unity and C#**, including gameplay programming, game systems, UI integration, mobile controls, optimization, SDK integration, and monetization systems.
+I'm a **Unity Game Developer and Software Engineer** focused on building engaging games, gameplay systems, mobile experiences, and practical software solutions.
 
-Alongside game development, I work with **Artificial Intelligence and Machine Learning**, particularly NLP, classification, computer vision, and applied research.
+🎮 My primary stack is **Unity + C#**, with experience in gameplay programming, physics systems, UI integration, touch/gyroscope controls, optimization, SDK integration, and monetization.
 
-Currently interested in opportunities and collaborations involving **game development, software engineering, and applied AI/ML**.
+🤖 Alongside game development, I work with **Artificial Intelligence and Machine Learning**, particularly NLP, classification, computer vision, and applied research.
 
----
+```text
+🎮  Unity Game Development      📱  Mobile & Casual Games
+💻  Software Engineering        🤖  AI / Machine Learning
+🧩  Gameplay Systems            🔬  Computer Science Research
+⚡  Optimization                🌐  Software & Web Technologies
+```
 
-## Core Expertise
+- 🔭 Currently building **Unity-based gameplay systems and mobile games**
+- 🎯 Interested in **Game Development, Software Engineering & Applied AI**
+- 🧠 Exploring **AI/ML applications in interactive systems**
+- 📄 Published **Machine Learning research through IEEE**
+- 🤝 Open to interesting **development and research collaborations**
 
-| Area | Technologies & Skills |
-| --- | --- |
-| **Game Development** | Unity, C#, Gameplay Programming, Game Systems, 2D Physics, UI/UX, Mobile Optimization |
-| **Mobile Development** | Android, Touch Controls, Gyroscope, SDK Integration, Ads & Monetization |
-| **AI / Machine Learning** | Python, Machine Learning, NLP, Computer Vision, PyTorch, TensorFlow, Scikit-learn |
-| **Software Development** | C++, Java, JavaScript, Object-Oriented Programming, APIs |
-| **Web & Data** | React, Node.js, PHP, MySQL, MongoDB, Firebase |
-| **Tools** | Git, GitHub, Linux, Figma |
+<br/>
 
----
+<!-- ========================= TECHNOLOGY ========================= -->
 
-## Game Development
+# 🛠️ Technology Arsenal
 
-I enjoy developing games with an emphasis on:
+### 🎮 Game Development
 
-`Gameplay Systems` · `Game Mechanics` · `Physics` · `Mobile Controls` · `UI` · `Optimization` · `Game Feel` · `SDK Integration`
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=unity,cs,dotnet,androidstudio&theme=dark" />
+</p>
 
-### Snack Attack
+<p align="center">
+  <img src="https://img.shields.io/badge/Gameplay_Programming-0D1117?style=for-the-badge&logo=unity&logoColor=2BD9FF" />
+  <img src="https://img.shields.io/badge/2D_Physics-0D1117?style=for-the-badge&logo=unity&logoColor=2BD9FF" />
+  <img src="https://img.shields.io/badge/Mobile_Optimization-0D1117?style=for-the-badge&logo=android&logoColor=3DDC84" />
+  <img src="https://img.shields.io/badge/Touch_Controls-0D1117?style=for-the-badge&logo=unity&logoColor=white" />
+  <img src="https://img.shields.io/badge/Gyroscope-0D1117?style=for-the-badge&logo=unity&logoColor=white" />
+  <img src="https://img.shields.io/badge/SDK_Integration-0D1117?style=for-the-badge&logo=unity&logoColor=white" />
+</p>
 
-A mobile educational game designed around interactive ESL learning and responsive mobile gameplay.
+<br/>
 
-**Technology:**  
-`Unity` · `C#` · `Android` · `Touch Controls` · `Gyroscope`
+### 💻 Programming Languages
 
----
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=cs,cpp,python,java,js,php&theme=dark" />
+</p>
 
-## AI & Machine Learning
+<br/>
 
-My AI/ML interests include:
+### 🤖 AI / Machine Learning
 
-`Machine Learning` · `Natural Language Processing` · `Computer Vision` · `Classification` · `Deep Learning`
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,opencv&theme=dark" />
+</p>
 
-### Research Publication
+<p align="center">
+  <img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white" />
+  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" />
+  <img src="https://img.shields.io/badge/NLP-2BD9FF?style=for-the-badge&logoColor=black" />
+  <img src="https://img.shields.io/badge/Computer_Vision-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" />
+  <img src="https://img.shields.io/badge/Deep_Learning-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" />
+</p>
 
-**Twitter News Classification Using Machine Learning**
+<br/>
 
-Published in the **2024 International Conference on Engineering & Computing Technologies (IEEE ICECT 2024)**.
+### 🌐 Web, Backend & Databases
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=react,nodejs,mysql,mongodb,firebase&theme=dark" />
+</p>
+
+<br/>
+
+### 🔧 Development Tools
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=git,github,linux,vscode,figma&theme=dark" />
+</p>
+
+<br/>
+
+<!-- ========================= GAME DEV ========================= -->
+
+# 🎮 Game Development
+
+I enjoy designing gameplay systems that feel **responsive, understandable, polished, and satisfying to interact with**.
+
+My Unity work includes:
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 🧩 Gameplay Systems
+
+- Gameplay mechanics
+- Custom game architecture
+- State management
+- Level systems
+- Physics & collision systems
+- Progression systems
+- Scoring & combo mechanics
+
+</td>
+
+<td width="50%" valign="top">
+
+### 📱 Mobile Development
+
+- Android development
+- Touch input
+- Gyroscope controls
+- Mobile UI
+- Performance optimization
+- Ads & monetization
+- Third-party SDK integration
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+<!-- ========================= PROJECTS ========================= -->
+
+# 🚀 Featured Work
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 🥩 Meat Slice
+
+A **2D physics-based slicing puzzle game** built in Unity.
+
+Players slice polygonal shapes while avoiding moving balls trapped inside the playable area.
+
+**Highlights**
+
+- Custom polygon slicing
+- Ball physics
+- Collision handling
+- Area calculation
+- Level progression
+- Mobile input
+- Dynamic gameplay systems
+
+**Stack**
+
+`Unity` `C#` `2D Physics` `Custom Geometry`
+
+</td>
+
+<td width="50%" valign="top">
+
+### 🍔 Snack Attack
+
+A mobile **ESL educational game** combining interactive gameplay with language learning.
+
+**Highlights**
+
+- Touch & gyro controls
+- Word-selection mechanics
+- Audio pronunciation
+- Combo systems
+- Progress tracking
+- Mobile UI
+- Game feedback systems
+
+**Stack**
+
+`Unity` `C#` `Android` `Gyroscope`
+
+</td>
+</tr>
+</table>
+
+<p align="center">
+  <a href="https://memoonch.github.io/memoon/">
+    <img src="https://img.shields.io/badge/🚀_Explore_My_Portfolio-2BD9FF?style=for-the-badge&logoColor=black" />
+  </a>
+  &nbsp;
+  <a href="https://github.com/memoonch?tab=repositories">
+    <img src="https://img.shields.io/badge/💻_View_Repositories-181717?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+</p>
+
+<br/>
+
+<!-- ========================= RESEARCH ========================= -->
+
+# 🔬 AI & Machine Learning Research
+
+### 📄 Twitter News Classification Using Machine Learning
+
+Machine-learning research focused on classifying Twitter/X news content using **Natural Language Processing and supervised machine-learning techniques**.
+
+<p>
+  <img src="https://img.shields.io/badge/IEEE-00629B?style=for-the-badge&logo=ieee&logoColor=white" />
+  <img src="https://img.shields.io/badge/Machine_Learning-2BD9FF?style=for-the-badge&logoColor=black" />
+  <img src="https://img.shields.io/badge/NLP-8A2BE2?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white" />
+</p>
+
+📍 **2024 International Conference on Engineering & Computing Technologies — IEEE ICECT 2024**
 
 **DOI:** `10.1109/ICECT61618.2024.10581173`
 
-**Technologies:**  
-`Python` · `Machine Learning` · `NLP` · `Scikit-learn`
+<p>
+  <a href="https://doi.org/10.1109/ICECT61618.2024.10581173">
+    <img src="https://img.shields.io/badge/📄_View_Publication-00629B?style=for-the-badge&logoColor=white" />
+  </a>
+</p>
 
----
+<br/>
 
-## Tech Stack
+<!-- ========================= GITHUB ANALYTICS ========================= -->
 
-**Languages**
-
-`C#` · `Python` · `C++` · `Java` · `JavaScript` · `PHP`
-
-**Game Development**
-
-`Unity` · `Android` · `Gameplay Programming` · `Mobile Development`
-
-**AI / Data**
-
-`PyTorch` · `TensorFlow` · `Scikit-learn` · `OpenCV` · `Pandas`
-
-**Web / Backend**
-
-`React` · `React Native` · `Node.js` · `MySQL` · `MongoDB` · `Firebase`
-
----
-
-## GitHub Activity
+# 📊 GitHub Analytics
 
 <p align="center">
-  <img src="./profile-summary-card-output/github_dark/0-profile-details.svg" width="100%" alt="GitHub Profile Details" />
+  <img
+    src="./profile-summary-card-output/github_dark/0-profile-details.svg"
+    width="100%"
+    alt="Muhammad Memoon GitHub Profile Details"
+  />
 </p>
 
 <p align="center">
-  <img src="./profile-summary-card-output/github_dark/1-repos-per-language.svg" width="49%" alt="Top Languages" />
-  <img src="./profile-summary-card-output/github_dark/3-stats.svg" width="49%" alt="GitHub Statistics" />
+  <img
+    src="./profile-summary-card-output/github_dark/1-repos-per-language.svg"
+    width="49%"
+    alt="Repositories per language"
+  />
+  <img
+    src="./profile-summary-card-output/github_dark/3-stats.svg"
+    width="49%"
+    alt="GitHub statistics"
+  />
 </p>
 
 <p align="center">
-  <img src="./profile/streak.svg" width="70%" alt="GitHub Contribution Streak" />
+  <img
+    src="./profile-summary-card-output/github_dark/2-most-commit-language.svg"
+    width="49%"
+    alt="Most committed languages"
+  />
+  <img
+    src="./profile-summary-card-output/github_dark/4-productive-time.svg"
+    width="49%"
+    alt="Productive coding time"
+  />
 </p>
 
----
+<br/>
 
-## Selected Work
+<!-- ========================= STREAK ========================= -->
 
-### 🎮 Game Development
-Mobile and casual game projects built with Unity and C#, covering gameplay systems, physics, UI, mobile input, optimization, and third-party integrations.
-
-### 🤖 Machine Learning Research
-Research and experiments involving NLP, text classification, computer vision, and applied machine learning.
-
-### 💻 Software Engineering
-Projects involving software development, web technologies, databases, APIs, and application architecture.
+## 🔥 Contribution Streak
 
 <p align="center">
-  <strong>
-    <a href="https://memoonch.github.io/memoon/">Explore My Portfolio →</a>
-  </strong>
+  <img
+    src="./profile/streak.svg"
+    width="75%"
+    alt="Muhammad Memoon GitHub Contribution Streak"
+  />
 </p>
 
----
+<br/>
 
-## Connect
+<!-- ========================= CONTRIBUTION SNAKE ========================= -->
 
-I'm open to discussing **Unity development, software engineering, AI/ML research, and interesting technical projects**.
+## 🐍 Contribution Activity
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/muhammad-memoon-459279268/">LinkedIn</a>
-  •
-  <a href="mailto:memoonch@gmail.com">memoonch@gmail.com</a>
-  •
-  <a href="https://memoonch.github.io/memoon/">Portfolio</a>
+
+<picture>
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="./assets/github-snake-dark.svg"
+  />
+  <source
+    media="(prefers-color-scheme: light)"
+    srcset="./assets/github-snake.svg"
+  />
+  <img
+    alt="GitHub contribution snake animation"
+    src="./assets/github-snake.svg"
+    width="100%"
+  />
+</picture>
+
+</p>
+
+<br/>
+
+<!-- ========================= CURRENT FOCUS ========================= -->
+
+# 🎯 Current Focus
+
+```text
+┌──────────────────────────────────────────────┐
+│                                              │
+│   🎮 Unity Gameplay & Game Systems           │
+│   📱 Mobile Game Development                 │
+│   ⚡ Physics & Performance Optimization      │
+│   🤖 Artificial Intelligence                │
+│   🧠 Machine Learning                        │
+│   🔬 Applied Computer Science Research       │
+│                                              │
+└──────────────────────────────────────────────┘
+```
+
+<br/>
+
+<!-- ========================= COLLABORATION ========================= -->
+
+# 🤝 Let's Build Something
+
+I'm interested in collaborating on:
+
+🎮 **Game Development**  
+🤖 **AI / Machine Learning**  
+💻 **Software Engineering**  
+🔬 **Research Projects**  
+🚀 **Interesting Technical Products**
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/muhammad-memoon-459279268/">
+    <img src="https://img.shields.io/badge/Let's_Connect-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
+  <a href="mailto:memoonch@gmail.com">
+    <img src="https://img.shields.io/badge/Send_Me_an_Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
+  </a>
+  <a href="https://memoonch.github.io/memoon/">
+    <img src="https://img.shields.io/badge/View_Portfolio-2BD9FF?style=for-the-badge&logo=googlechrome&logoColor=black" />
+  </a>
+</p>
+
+<br/>
+
+<p align="center">
+  <b>🎮 Build • Play • Learn • Improve</b>
 </p>
 
 <p align="center">
-  <strong>Build · Play · Learn · Improve</strong>
+  <i>Thanks for visiting my profile!</i>
+</p>
+
+<p align="center">
+  <img
+    src="https://capsule-render.vercel.app/api?type=waving&color=0:2BD9FF,50:0A66C2,100:0D1117&height=120&section=footer"
+    width="100%"
+  />
 </p>
