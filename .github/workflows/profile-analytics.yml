@@ -3,125 +3,136 @@ name: Profile Analytics
 on:
   schedule:
     - cron: "15 2 * * *"
+
   workflow_dispatch:
 
 permissions:
   contents: write
 
+
 jobs:
 
-  # ==========================================================
-  # 1. GITHUB PROFILE SUMMARY CARDS
-  # ==========================================================
-
-  summary-cards:
-    name: Generate GitHub Summary Cards
-    runs-on: ubuntu-latest
+  generate-profile:
+    name: Generate Profile Analytics
+    runs-on: ubuntu-24.04
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
 
-      - name: Generate summary cards
+      # ======================================================
+      # CHECKOUT
+      # ======================================================
+
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          ref: main
+          fetch-depth: 0
+
+
+      # ======================================================
+      # CREATE OUTPUT DIRECTORIES
+      # ======================================================
+
+      - name: Create output directories
+        run: |
+          mkdir -p profile
+          mkdir -p assets
+
+
+      # ======================================================
+      # GITHUB PROFILE SUMMARY CARDS
+      # ======================================================
+
+      - name: Generate GitHub Summary Cards
         uses: vn7n24fzkq/github-profile-summary-cards@release
         env:
           GITHUB_TOKEN: ${{ secrets.SUMMARY_GITHUB_TOKEN }}
+
         with:
           USERNAME: ${{ github.repository_owner }}
+
           BRANCH_NAME: "main"
 
           # Pakistan = UTC +5
           UTC_OFFSET: 5
 
-          # Dark GitHub theme
+          # Generate only dark GitHub theme
           THEME: "github_dark"
 
           # Card animation
           ANIMATION: "load"
+
           DURATION: "2.5"
 
-          # Automatically commit generated cards
-          AUTO_PUSH: true
+          # IMPORTANT:
+          # We will push everything ourselves at the end.
+          AUTO_PUSH: false
 
 
-  # ==========================================================
-  # 2. CONTRIBUTION STREAK
-  # ==========================================================
+      # ======================================================
+      # CONTRIBUTION STREAK
+      # ======================================================
 
-  streak:
-    name: Generate Contribution Streak
-    needs: summary-cards
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout latest repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Create profile directory
-        run: mkdir -p profile
-
-      - name: Generate streak SVG
+      - name: Generate Contribution Streak
         uses: zients/github-readme-streak-stats@v2
+
         with:
           path: profile/streak.svg
+
           token: ${{ secrets.GITHUB_TOKEN }}
+
           options: user=${{ github.repository_owner }}&theme=tokyonight&hide_border=true&background=00000000&disable_animations=false
 
-      - name: Commit streak
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add profile/streak.svg
+      # ======================================================
+      # CONTRIBUTION SNAKE
+      # ======================================================
 
-          if git diff --cached --quiet; then
-            echo "No streak changes."
-            exit 0
-          fi
-
-          git commit -m "chore: update GitHub streak"
-          git push
-
-
-  # ==========================================================
-  # 3. CONTRIBUTION SNAKE
-  # ==========================================================
-
-  contribution-snake:
-    name: Generate Contribution Snake
-    needs: streak
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout latest repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Create assets directory
-        run: mkdir -p assets
-
-      - name: Generate contribution snake
+      - name: Generate Contribution Snake
         uses: Platane/snk/svg-only@v3
+
         with:
           github_user_name: ${{ github.repository_owner }}
+
           outputs: |
             assets/github-snake.svg
             assets/github-snake-dark.svg?palette=github-dark&color_snake=%232BD9FF
 
-      - name: Commit contribution snake
+
+      # ======================================================
+      # VERIFY GENERATED FILES
+      # ======================================================
+
+      - name: Show generated files
+        run: |
+          echo "========== PROFILE =========="
+          find profile -maxdepth 2 -type f -print || true
+
+          echo "========== ASSETS =========="
+          find assets -maxdepth 2 -type f -print || true
+
+          echo "========== SUMMARY CARDS =========="
+          find profile-summary-card-output -maxdepth 3 -type f -print || true
+
+
+      # ======================================================
+      # COMMIT EVERYTHING ONCE
+      # ======================================================
+
+      - name: Commit profile analytics
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add assets/github-snake.svg assets/github-snake-dark.svg
+          git add profile/
+          git add assets/
+          git add profile-summary-card-output/
 
           if git diff --cached --quiet; then
-            echo "No contribution graph changes."
+            echo "No profile analytics changes to commit."
             exit 0
           fi
 
-          git commit -m "chore: update contribution animation"
-          git push
+          git commit -m "chore: update profile analytics"
+
+          git push origin HEAD:main
