@@ -1,0 +1,127 @@
+name: Profile Analytics
+
+on:
+  schedule:
+    - cron: "15 2 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+
+  # ==========================================================
+  # 1. GITHUB PROFILE SUMMARY CARDS
+  # ==========================================================
+
+  summary-cards:
+    name: Generate GitHub Summary Cards
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate summary cards
+        uses: vn7n24fzkq/github-profile-summary-cards@release
+        env:
+          GITHUB_TOKEN: ${{ secrets.SUMMARY_GITHUB_TOKEN }}
+        with:
+          USERNAME: ${{ github.repository_owner }}
+          BRANCH_NAME: "main"
+
+          # Pakistan = UTC +5
+          UTC_OFFSET: 5
+
+          # Dark GitHub theme
+          THEME: "github_dark"
+
+          # Card animation
+          ANIMATION: "load"
+          DURATION: "2.5"
+
+          # Automatically commit generated cards
+          AUTO_PUSH: true
+
+
+  # ==========================================================
+  # 2. CONTRIBUTION STREAK
+  # ==========================================================
+
+  streak:
+    name: Generate Contribution Streak
+    needs: summary-cards
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout latest repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Create profile directory
+        run: mkdir -p profile
+
+      - name: Generate streak SVG
+        uses: zients/github-readme-streak-stats@v2
+        with:
+          path: profile/streak.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          options: user=${{ github.repository_owner }}&theme=tokyonight&hide_border=true&background=00000000&disable_animations=false
+
+      - name: Commit streak
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add profile/streak.svg
+
+          if git diff --cached --quiet; then
+            echo "No streak changes."
+            exit 0
+          fi
+
+          git commit -m "chore: update GitHub streak"
+          git push
+
+
+  # ==========================================================
+  # 3. CONTRIBUTION SNAKE
+  # ==========================================================
+
+  contribution-snake:
+    name: Generate Contribution Snake
+    needs: streak
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout latest repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Create assets directory
+        run: mkdir -p assets
+
+      - name: Generate contribution snake
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            assets/github-snake.svg
+            assets/github-snake-dark.svg?palette=github-dark&color_snake=%232BD9FF
+
+      - name: Commit contribution snake
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add assets/github-snake.svg assets/github-snake-dark.svg
+
+          if git diff --cached --quiet; then
+            echo "No contribution graph changes."
+            exit 0
+          fi
+
+          git commit -m "chore: update contribution animation"
+          git push
